@@ -1,1 +1,336 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - About</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .about-section {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .about-section h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+    .about-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      object-fit: cover;
+      margin-bottom: 30px;
+    }
+    .about-text {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    /* Additional CSS for Projects Section */
+    projects-section h2 {
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+    }
+    .card {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .card-img-top {
+        max-height: 180px;
+        object-fit: cover;
+    }
+    .card-body {
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 1.25rem;
+    }
+    .card-text {
+        margin-bottom: 15px;
+    }
+
+    /* Additional CSS for Skills Section */
+    .skills-section h2{
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+    }
+    .skills-section .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .skills-section .card-img-top {
+        padding: 20px;
+        background-color: #f8f9fa;
+        height: 180px;
+        object-fit: contain;
+    }
+    .skills-section .card-body {
+        padding: 15px;
+    }
+    .skills-section .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 15px; 
+    }
+    .skills-section .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+    .skills-section .btn-outline-primary:hover {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    /* Additional CSS for Contact Section */
+    .contact-section {
+        padding: 50px 0;
+    }
+    .contact-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    .contact-section p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .social-icon {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .social-icon:hover {
+        opacity: 0.7;
+    }
+    
+    .contact-section a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .contact-section a:hover {
+        color: #ddd;
+    }
+
+/* Sticky Navigation Bar */
+body {
+  padding-top: 70px; /* Ensure content doesn't overlap with navbar */
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.section {
+  padding: 100px 0; /* Padding to space sections nicely */
+}
+
+/* Active link styling (optional for visual feedback) */
+.nav-link.active {
+  font-weight: bold;
+  color: #ffc107 !important; /* Custom highlight color */
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- About Section -->
+  <section id = 'about' class="about-section container">
+    <h2>About</h2>
+    <img src="images/about/1.jpg" alt="Profile Picture" class="about-img">
+    <div class="about-text">
+      <p>Welcome to my portfolio! I am a current undergraduate at UC San Diego, passionate about cognitive science and data science to address critical problems in the health care system. My journey 
+        into this field was inspired by personal experiences navigating healthcare disparities. particularly among underrepresented communities. With a background in data science, I have strong skills
+        in Python, Java, SQL, and machine learning, particularly in data extraction, transformation, and visualization. </p>
+      <p>As I prepare to apply to graduate school, my goal is to leverage data science to advocate for equitable access and improved outcomes for marginalized populations. Thank you for taking the time to visit my website!</p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- Projects Section -->
+<section id = "projects" class="projects-section container mt-5">
+    <h2 class="text-center mb-5">Projects</h2>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Project 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 1 Image">
+          <div class="card-body">
+            <h5 class="card-title">Meteorite Landings Analysis</h5>
+            <p class="card-text">This project investigates patterns in meteorite landings using a dataset from NASA's Open Data Portal, focusing on meteorite density across continents. The analysis includes computing probabilities of meteorite sightings, conducting hypothesis tests to determine if meteorite landings are randomly distributed, and comparing distributions across continents using Total Variation Distance (TVD). Additionally, confidence intervals for mean meteorite mass are calculated using the Central Limit Theorem (CLT). Finally, the project explores trends in the median meteorite mass over time to assess any significant changes.</p>
+            <a href="https://github.com/NandaPayy/meteorite_landing.git" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 2 Image">
+          <div class="card-body">
+            <h5 class="card-title">Taylor Swift's Songs Analysis</h5>
+            <p class="card-text">This project utilizes a dataset of Taylor Swift's songs to build three interactive tools. The first is a song recommender, which takes a user's favorite song and suggests similar tracks from Taylor Swift's discography. The second tool is a lyric searcher that allows users to input a phrase and returns the total number of times it appears across her songs, along with how many songs feature the phrase. The final tool generates a word cloud, summarizing the key themes of each song based on frequently used keywords.</p>
+            <a href="https://github.com/NandaPayy/taylor_swift.git" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/projects/4.jpg" class="card-img-top" alt="Project 3 Image">
+          <div class="card-body">
+            <h5 class="card-title">Image Processing App</h5>
+            <p class="card-text">This project involves the development of a basic image processing app that offers several key features. It includes image processing methods such as negative, grayscale, and rotation. Additionally, the app implements a K-Nearest Neighbors (KNN) classifier for predicting image labels based on processed inputs, providing both visual manipulation and machine learning functionality.</p>
+            <a href="https://github.com/NandaPayy/image_processing.git" class="btn btn-primary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- Skill 1: Python -->
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="images/skills/5.jpg" class="card-img-top mx-auto d-block mt-3" alt="Python" style="width: 50px;">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Proficient in Python for data exploration, data analysis, and object-oriented programming through data science courses. Learned Python online via Udemy through two courses: "Teach Python to Kids Age 11 to 13" and "Python and Django for Beginners.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 2: Java -->
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="images/skills/6.jpg" class="card-img-top mx-auto d-block mt-3" alt="Java" style="width: 50px;">
+            <div class="card-body">
+              <h5 class="card-title">Java</h5>
+              <p class="card-text">Introduced to Java via a free class on Codecademy which covers basic concepts (if/else, loops, classes) using Java syntax. I gained practical experience in Java by working on larger computational systems and learning advanced programming techniques, including encapsulation, data structures (stacks, queues, trees, and hash tables), and algorithm complexity in a data science course. </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3: SQL -->
+        <div class="col">
+            <div class="card h-100 text-center">
+              <img src="images/skills/7.jpg" class="card-img-top mx-auto d-block mt-3" alt="Data Visualization" style="width: 50px;">
+              <div class="card-body">
+                <h5 class="card-title">SQL</h5>
+                <p class="card-text">Familiar with SQL basics for database management and queries. Learned SQL basics online via sqlzoo.net, mastering key concepts such as SELECT queries and joins.</p>
+              </div>
+            </div>
+          </div>        
+  
+        <!-- Skill 4: Data Visualization -->
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="images/skills/8.jpg" class="card-img-top mx-auto d-block mt-3" alt="Data Visualization" style="width: 50px;">
+            <div class="card-body">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">Skilled in visualizing complex datasets using tools like Tableau, Matplotlib, and Seaborn. I gained hands-on experience through class projects, learning to create bar charts, pie charts, scatterplots, and others to easily explain data to a larger audience.</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5" style="background-color: #333; color: white;">
+    <div class="container text-center">
+      <!-- Heading -->
+      <h2 class="mb-4">Contact Me</h2>
+      
+      <!-- Contact Information -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-6 d-flex justify-content-around">
+          <!-- Email -->
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <p class="mt-2">nanda.arunp@gmail.com</p>
+          </div>
+          <!-- Phone -->
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <p class="mt-2">949-353-4868</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Social Media Icons -->
+      <div class="row justify-content-center">
+        <div class="col-md-6 d-flex justify-content-around">
+          <!-- LinkedIn Icon -->
+          <a href="https://www.linkedin.com/in/nanda-arun-payyappilly-036937262/" target="_blank" class="btn btn-pink rounded-circle" data-bs-toggle="tooltip" title="LinkedIn">
+            <img src="icons/9.jpg" alt="LinkedIn" class="rounded-circle" style="width: 40px;">
+          </a>
+          <!-- GitHub Icon -->
+          <a href="https://github.com/NandaPayy" target="_blank" class="btn btn-pink rounded-circle" data-bs-toggle="tooltip" title="GitHub">
+            <img src="icons/8.jpg" alt="GitHub" class="rounded-circle" style="width: 40px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Sticky Navigation Bar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Your website sections for smooth scrolling -->
+<section id="home" class="section"> <!-- Your Home Section Content --> </section>
+<section id="about" class="section"> <!-- Your About Section Content --> </section>
+<section id="projects" class="section"> <!-- Your Projects Section Content --> </section>
+<section id="skills" class="section"> <!-- Your Skills Section Content --> </section>
+<section id="contact" class="section"> <!-- Your Contact Section Content --> </section>
+
+  
+  
